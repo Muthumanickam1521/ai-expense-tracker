@@ -8,12 +8,6 @@ android {
     namespace = "com.example.aiexpensetracker"
     compileSdk = 36
 
-    externalNativeBuild {
-        cmake {
-            path = file("src/main/cpp/CMakeLists.txt")
-        }
-    }
-
     defaultConfig {
         applicationId = "com.example.aiexpensetracker"
         minSdk = 26
@@ -44,8 +38,6 @@ android {
         compose = true
     }
 }
-
-
 
 dependencies {
 
