@@ -3,6 +3,7 @@ package com.example.aiexpensetracker
 import android.Manifest
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -25,8 +26,13 @@ class MainActivity : ComponentActivity() {
 
     private val micPermissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
-            if (granted) startTracker()
+            if (granted) {
+                startTracker()
+                initWhisper() // POINT 7
+            }
         }
+
+    private var whisperCtx: Long = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,5 +64,23 @@ class MainActivity : ComponentActivity() {
 
     private fun startTracker() {
         startForegroundService(Intent(this, TrackerService::class.java))
+    }
+
+    // POINT 7: Runtime Whisper usage
+    private fun initWhisper() {
+        whisperCtx = WhisperLib.initContextFromAsset(
+            assets,
+            "models/ggml-tiny.bin"
+        )
+
+        // dummy audio buffer placeholder (replace with real mic audio)
+        val dummyAudio = FloatArray(16000) { 0f }
+
+        WhisperLib.fullTranscribe(
+            whisperCtx,
+            Runtime.getRuntime().availableProcessors(),
+            dummyAudio
+        )
+
     }
 }

@@ -1,0 +1,155 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "ggml-build",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-ggml-build-Debug-93371aa583b9d01ade0d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "whispercpp/ggml"
+				},
+				{
+					"build" : "ggml-build/src",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-ggml-build.src-Debug-37a79b0e3cb7d2f658d7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "whispercpp/ggml/src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "ggml-build/src/ggml-cpu",
+					"jsonFile" : "directory-ggml-build.src.ggml-cpu-Debug-81f5a333fba07cecfb76.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "whispercpp/ggml/src/ggml-cpu"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "whisper",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"name" : "ggml",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "ggml::@b87c5e9488ba91b9f212",
+					"jsonFile" : "target-ggml-Debug-a3aa50762e242d17f2ab.json",
+					"name" : "ggml",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ggml-base::@b87c5e9488ba91b9f212",
+					"jsonFile" : "target-ggml-base-Debug-4dd137642685bdab420f.json",
+					"name" : "ggml-base",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ggml-cpu::@b87c5e9488ba91b9f212",
+					"jsonFile" : "target-ggml-cpu-Debug-e3c42b3919397c57513a.json",
+					"name" : "ggml-cpu",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "whisper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-whisper-Debug-23a78339763210906dca.json",
+					"name" : "whisper",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/.cxx/Debug/4v3f5h6n/arm64-v8a",
+		"source" : "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

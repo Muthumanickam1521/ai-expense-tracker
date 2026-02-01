@@ -1,0 +1,60 @@
+{
+  "buildFiles": [
+    "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp/CMakeLists.txt",
+    "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp/whispercpp/ggml/CMakeLists.txt",
+    "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp/whispercpp/ggml/cmake/common.cmake",
+    "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp/whispercpp/ggml/cmake/ggml-config.cmake.in",
+    "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp/whispercpp/ggml/src/CMakeLists.txt",
+    "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp/whispercpp/ggml/src/ggml-cpu/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/pearlrubymv/Android/Sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/.cxx/Debug/4v3f5h6n/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/pearlrubymv/Android/Sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/.cxx/Debug/4v3f5h6n/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "whisper::@6890427a1f51a3e7e1df": {
+      "artifactName": "whisper",
+      "abi": "arm64-v8a",
+      "output": "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/build/intermediates/cxx/Debug/4v3f5h6n/obj/arm64-v8a/libwhisper.so",
+      "runtimeFiles": [
+        "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/build/intermediates/cxx/Debug/4v3f5h6n/obj/arm64-v8a/libggml.so",
+        "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/build/intermediates/cxx/Debug/4v3f5h6n/obj/arm64-v8a/libggml-cpu.so",
+        "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/build/intermediates/cxx/Debug/4v3f5h6n/obj/arm64-v8a/libggml-base.so"
+      ]
+    },
+    "ggml::@b87c5e9488ba91b9f212": {
+      "artifactName": "ggml",
+      "abi": "arm64-v8a",
+      "output": "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/build/intermediates/cxx/Debug/4v3f5h6n/obj/arm64-v8a/libggml.so",
+      "runtimeFiles": [
+        "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/build/intermediates/cxx/Debug/4v3f5h6n/obj/arm64-v8a/libggml-cpu.so",
+        "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/build/intermediates/cxx/Debug/4v3f5h6n/obj/arm64-v8a/libggml-base.so"
+      ]
+    },
+    "ggml-cpu::@b87c5e9488ba91b9f212": {
+      "artifactName": "ggml-cpu",
+      "abi": "arm64-v8a",
+      "output": "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/build/intermediates/cxx/Debug/4v3f5h6n/obj/arm64-v8a/libggml-cpu.so",
+      "runtimeFiles": [
+        "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/build/intermediates/cxx/Debug/4v3f5h6n/obj/arm64-v8a/libggml-base.so",
+        "/home/pearlrubymv/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/18/lib/linux/aarch64/libomp.so"
+      ]
+    },
+    "ggml-base::@b87c5e9488ba91b9f212": {
+      "artifactName": "ggml-base",
+      "abi": "arm64-v8a",
+      "output": "/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/build/intermediates/cxx/Debug/4v3f5h6n/obj/arm64-v8a/libggml-base.so",
+      "runtimeFiles": []
+    }
+  }
+}

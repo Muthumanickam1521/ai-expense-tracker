@@ -1,0 +1,105 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"whispercpp/ggml/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 333,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 334,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 402,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/build/intermediates/cxx/Debug/4v3f5h6n/obj/arm64-v8a/libggml.so"
+			],
+			"targetId" : "ggml::@b87c5e9488ba91b9f212",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"whispercpp/ggml/include/ggml.h",
+				"whispercpp/ggml/include/ggml-cpu.h",
+				"whispercpp/ggml/include/ggml-alloc.h",
+				"whispercpp/ggml/include/ggml-backend.h",
+				"whispercpp/ggml/include/ggml-blas.h",
+				"whispercpp/ggml/include/ggml-cann.h",
+				"whispercpp/ggml/include/ggml-cpp.h",
+				"whispercpp/ggml/include/ggml-cuda.h",
+				"whispercpp/ggml/include/ggml-opt.h",
+				"whispercpp/ggml/include/ggml-metal.h",
+				"whispercpp/ggml/include/ggml-rpc.h",
+				"whispercpp/ggml/include/ggml-sycl.h",
+				"whispercpp/ggml/include/ggml-vulkan.h",
+				"whispercpp/ggml/include/ggml-webgpu.h",
+				"whispercpp/ggml/include/ggml-zendnn.h",
+				"whispercpp/ggml/include/gguf.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/build/intermediates/cxx/Debug/4v3f5h6n/obj/arm64-v8a/libggml-base.so"
+			],
+			"targetId" : "ggml-base::@b87c5e9488ba91b9f212",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/ggml",
+			"paths" : 
+			[
+				"/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/.cxx/Debug/4v3f5h6n/arm64-v8a/ggml-build/ggml-config.cmake",
+				"/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/.cxx/Debug/4v3f5h6n/arm64-v8a/ggml-build/ggml-version.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "ggml-build",
+		"source" : "whispercpp/ggml"
+	}
+}

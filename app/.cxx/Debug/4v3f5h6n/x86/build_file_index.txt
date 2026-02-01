@@ -1,0 +1,6 @@
+/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp/CMakeLists.txt
+/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp/whispercpp/ggml/CMakeLists.txt
+/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp/whispercpp/ggml/cmake/common.cmake
+/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp/whispercpp/ggml/cmake/ggml-config.cmake.in
+/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp/whispercpp/ggml/src/CMakeLists.txt
+/home/pearlrubymv/AndroidStudioProjects/AIExpenseTracker/app/src/main/cpp/whispercpp/ggml/src/ggml-cpu/CMakeLists.txt

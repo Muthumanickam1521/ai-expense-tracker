@@ -20,6 +20,12 @@ class TrackerService : Service() {
     private lateinit var audioRecord: AudioRecord
     private var running = true
 
+
+    object Native {
+        init { System.loadLibrary("whisper") }
+        external fun testWhisper(): Int
+    }
+
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         android.util.Log.e("TRACKER", "🔥 TrackerService onStartCommand CALLED")
 
