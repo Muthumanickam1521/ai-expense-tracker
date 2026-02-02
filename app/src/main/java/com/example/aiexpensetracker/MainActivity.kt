@@ -13,10 +13,12 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.example.aiexpensetracker.ui.theme.AIExpenseTrackerTheme
+import kotlinx.coroutines.delay
 
 class MainActivity : ComponentActivity() {
 
@@ -44,6 +46,17 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             AIExpenseTrackerTheme {
+                var isGreen by remember { mutableStateOf(wakeWordDetected) }
+
+                // Automatically turn back to gray after 5 seconds
+                LaunchedEffect(wakeWordDetected) {
+                    if (wakeWordDetected) {
+                        isGreen = true
+                        delay(5000) // 5 seconds
+                        isGreen = false
+                    }
+                }
+
                 BoxWithConstraints(
                     modifier = Modifier.fillMaxSize(),
                     contentAlignment = Alignment.Center
@@ -53,7 +66,7 @@ class MainActivity : ComponentActivity() {
                         modifier = Modifier
                             .size(circleSize)
                             .background(
-                                color = if (wakeWordDetected) Color.Green else Color.Gray,
+                                color = if (isGreen) Color.Green else Color.Gray,
                                 shape = androidx.compose.foundation.shape.CircleShape
                             )
                     )
